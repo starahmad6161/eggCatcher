@@ -1,0 +1,137 @@
+body
+{
+    overflow: hidden;
+}
+/*
+*
+{
+    cursor: none;
+}
+*/
+.home
+{
+    background: url(../imgs/Background_Night.svg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+.result .text
+{
+    opacity: .8;
+    font-size: 1.5rem;
+}
+
+.hens-section .hen-container .happy-hen
+{
+    width: 30%;
+    animation: henAnim 1.5s infinite;
+    position: relative;
+    z-index: 2;
+}
+.hens-section .happy-egg {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 10%;
+    transform: translateX(-50%);
+    z-index: 1;
+    /*
+    animation: eggAnim 2s infinite linear;
+    */
+}
+/*
+@keyframes eggAnim {
+    0% {
+        top: 50px;
+    }
+    100% {
+        top: 100%;
+    }
+}
+*/
+@keyframes henAnim {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.intro-section
+{
+    background-color: #4C4660;
+    border: 4px solid #FF4571;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    width: 50%;
+}
+@media (max-width: 767px) {
+    .intro-section
+    {
+        width: 90%;
+    }
+    .intro-section .title
+    {
+        font-size: 2rem;
+    }
+}
+.intro-section .title
+{
+    letter-spacing: -.3rem;
+    font-size: 4rem;
+}
+
+.intro-section #score-result
+{
+    font-size: 3rem;
+    color: #FFC107;
+}
+
+.intro-section #play-btn
+{
+    background-color: #FF4571;
+    border: 4px solid #fff;
+    font-size: 2rem;
+    transform: translateY(45px);
+}
+
+.basket-section
+{
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    width: 100%;
+    width: 7%;
+    transform: translateX(-50%);
+}
+.basket-section .basket-img
+{
+    width: 100%;
+}
+.basket-section .basket-counter
+{
+    font-size: 1.5rem;
+    color: #FFC107;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+}
+.broken-eggs
+{
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+}
+.broken-eggs .broken-egg
+{
+    width: 20%;
+    display: none;
+}

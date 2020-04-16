@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <div class="sound">
+            <audio id='happy-mp3'>
+                <source src="audio/happy-chicken.mp3" type="audio/mpeg">
+            </audio>
+            <audio id='score-mp3'>
+                <source src="audio/score.mp3" type="audio/mpeg">
+            </audio>
+            <audio id='game-over'>
+                <source src="audio/game-over.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+
+        <div class="home position-relative">
+            <div class="container-fluid h-100">
+                <!--result section-->
+                <div class="result">
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="text font-weight-bold text-white">Score <span id="score">0</span> </p>
+                        </div>
+                        <div class="col-6">
+                            <p class="text font-weight-bold text-white text-right">Life <span id="life">0</span> </p>
+                        </div>
+                    </div>
+                </div>
+                <!--hens section-->
+                <div class="hens-section h-100">
+                    <div class="row text-center h-100">
+                        <div class="col-4">
+                            <div class="hen-container position-relative h-100">
+                                <img class="happy-hen" src="imgs/happy-hen.svg" alt="Happy Hen">
+                                <img class="happy-egg" data-egg="0" src="imgs/Happy_Egg.svg" alt="Happy Egg">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="hen-container position-relative h-100">
+                                <img class="happy-hen" src="imgs/happy-hen.svg" alt="Happy Hen">
+                                <img class="happy-egg" data-egg="1" src="imgs/Happy_Egg.svg" alt="Happy Egg">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="hen-container position-relative h-100">
+                                <img class="happy-hen" src="imgs/happy-hen.svg" alt="Happy Hen">
+                                <img class="happy-egg" data-egg="2" src="imgs/Happy_Egg.svg" alt="Happy Egg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--intro-section-->
+                <div class="intro-section rounded-pill py-3 font-weight-bold text-center mx-auto">
+                    <h1 class="title text-white text-uppercase">Happy Eggs</h1>
+                    <p id="score-result" class="text-center">
+
+                    </p>
+                    <button id="play-btn" class="btn text-white rounded-pill px-5 py-0">Play</button>
+                </div>
+                <!--Basket Section-->
+                <div class="basket-section">
+                    <img class="basket-img" src="imgs/Basket.svg">
+                    <span class="basket-counter font-weight-bold">0</span>
+                </div>
+                <!--Broken Eggs-->
+                <div class="broken-eggs">
+                    <div class="row">
+                        <div class="col-4 text-center">
+                            <img class="broken-egg" src="imgs/Broken_Egg.svg" alt="Broken Egg">
+                        </div>
+                        <div class="col-4 text-center">
+                            <img class="broken-egg" src="imgs/Broken_Egg.svg" alt="Broken Egg">
+                        </div>
+                        <div class="col-4 text-center">
+                            <img class="broken-egg" src="imgs/Broken_Egg.svg" alt="Broken Egg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <script src="js/main.js"></script>
+    </body>
+</html>
